@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  date: 2010-11-21 19:36:49
+  gps: MyString
+  adress: MyString
+  text: MyText
+  file: MyString
+  limit: MyString
+  response: MyString
+
+two:
+  title: MyString
+  date: 2010-11-21 19:36:49
+  gps: MyString
+  adress: MyString
+  text: MyText
+  file: MyString
+  limit: MyString
+  response: MyString

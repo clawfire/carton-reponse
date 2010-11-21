@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  paiement_date: 2010-11-21 19:37:42
+  method: MyString
+
+two:
+  paiement_date: 2010-11-21 19:37:42
+  method: MyString
