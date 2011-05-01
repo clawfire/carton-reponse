@@ -28,29 +28,30 @@ ActiveRecord::Schema.define(:version => 20101121183808) do
   create_table "clients", :force => true do |t|
     t.integer "user_id"
     t.string  "display_name", :null => false
-    t.string  "name"
+    t.string  "firstname"
     t.string  "lastname"
     t.string  "company"
     t.string  "adress"
     t.string  "zipcode"
-    t.string  "country"
-    t.string  "tel"
+    t.string  "city"
+    t.string  "land"
+    t.string  "phone"
+    t.string  "tva_number"
     t.integer "plan_id"
   end
 
   create_table "guests", :force => true do |t|
-    t.string   "name",                          :null => false
+    t.string   "firstname",                     :null => false
     t.string   "lastname",                      :null => false
     t.string   "email",                         :null => false
-    t.string   "tel"
+    t.string   "phone"
     t.boolean  "did_come",   :default => false, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "paiements", :force => true do |t|
-    t.datetime "paiement_date", :default => '2010-11-21 00:00:00', :null => false
-    t.string   "method",                                           :null => false
+    t.string   "method",     :null => false
     t.integer  "plan_id"
     t.datetime "created_at"
     t.datetime "updated_at"

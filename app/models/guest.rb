@@ -1,5 +1,5 @@
 class Guest < ActiveRecord::Base
-  belongs_to :campagne_id
+  belongs_to :campagne
   
   validates_associated :campagne, :message => "guest must have a party to go"
   validates_format_of :email, :with => /^[^@]+@[^@]+.[a-z]{2,}$/, :message => "should enter a valid email adress"

@@ -6,4 +6,5 @@ class Campagne < ActiveRecord::Base
   
   
   has_one :user
+  has_one :client, :through => :user
 end
