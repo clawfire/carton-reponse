@@ -20,7 +20,8 @@ class CreateUsers < ActiveRecord::Migration
       t.string :company
       t.string :adress
       t.string :zipcode
-      t.string :country
+      t.string :city
+      t.string :land
       t.string :phone
       t.string :tva_number
       t.belongs_to :plan
