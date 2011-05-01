@@ -15,13 +15,14 @@ class CreateUsers < ActiveRecord::Migration
     create_table :clients do |t|
       t.belongs_to :user
       t.string :display_name, :null => false
-      t.string :name
+      t.string :firstname
       t.string :lastname
       t.string :company
       t.string :adress
       t.string :zipcode
       t.string :country
-      t.string :tel
+      t.string :phone
+      t.string :tva_number
       t.belongs_to :plan
     end
   end

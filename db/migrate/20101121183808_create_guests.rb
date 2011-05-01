@@ -1,10 +1,10 @@
 class CreateGuests < ActiveRecord::Migration
   def self.up
     create_table :guests do |t|
-      t.string :name, :null => false
+      t.string :firstname, :null => false
       t.string :lastname, :null => false
       t.string :email, :null => false
-      t.string :tel
+      t.string :phone
       t.boolean :did_come, :null => false, :default => false
 
       t.timestamps
